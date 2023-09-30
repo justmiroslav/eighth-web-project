@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.to-do-list h2 {
+    text-align: center; 
+}
+
+.create-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-task button,
+.create-task input {
+    margin: 0 10px;
+}
+
+.create-task button {
+    height: 44px;
+    border: 1px solid var(--website-button-blue, #CBD7E8);
+    background-color: transparent;
+    color: #000D40;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.create-task button:hover {
+    border: none;
+}
+
+.create-task button:active {
+    background-color: #129AFE;
+    color: white;
+}
+
+.create-task input {
+    border: 1px solid var(--website-button-blue, #CBD7E8);
+    background: var(--website-frame-white, #FFF);
+    background-color: transparent;
+    border-radius: 1000px;
+    padding: 1em 2em;
+}
+
+.create-task input::placeholder {
+    color: #BCBCBC;
+}
+
+input:focus {
+    outline: none;
+}
+
+.list-of-tasks {
+    margin-top: 50px;
+}
+
+.new-task {
+    padding: 0 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.side-elements {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+}
+
+.status-text {
+    margin-right: 5px;
+}
+
+.completed .status-text,
+.completed .status-icon {
+    color: green;
+}
+
+.uncompleted .status-text,
+.uncompleted .status-icon {
+    color: red;
+}
+
+.task-edit button{
+    height: 44px;
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+    
+.task-edit button:hover {
+    color: #000D40;
+}
+
+.task-edit button:active {
+    background-color: transparent;
+    border: 1px solid var(--website-button-blue, #CBD7E8);
+}
+
+.task-number {
+    font-weight: bold;
+}
+
+.active {
+    background-color: bisque;
+    border-radius: 1000px;
+    height: 44px;
+}
